@@ -11,13 +11,14 @@ import { ProjectData } from '../slider/slideData';
 import Slider from '../slider/Slider';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Contact from '../components/Contact';
+import Testimonial from '../components/Testimonial';
 
 const Home = () => {
   return (
     <div>
       {' '}
-      <div className='text-center p-8 py-10'>
-        <h2 className='text-4xl py-2 text-teal-600 font-bold md:text-6xl'>
+      <div className='text-center p-8 py-10 text-poppins'>
+        <h2 className='text-4xl py-2 text-teal-600 font-bold md:text-6xl '>
           Akinwale Ayomide
         </h2>
         <h3 className='text-xl py-2 md:text-3xl dark:text-white'>
@@ -39,7 +40,7 @@ const Home = () => {
         <img src={ayo} alt='' className='object-cover object-center' />
       </div>
       <section>
-        <div className='dark:text-white md:text-md max-w-2xl mx-auto'>
+        <div className='dark:text-white md:text-md max-w-2xl mx-auto text-poppins'>
           <AnimationOnScroll animateIn='animate__bounceIn'>
             <h3 className=' text-4xl md:text-5xl py-1 font-bold md:text-center mt-10 '>
               Services I Offer
@@ -49,7 +50,7 @@ const Home = () => {
             animateIn='animate__fadeInLeftBig'
             animateOut='animate__fadeInLeftBig'
           >
-            <p className='text-md py-2 leading-8 text-gray-80'>
+            <p className='text-lg py-2 leading-8 text-gray-80'>
               Since the beginning of my journey as a
               <span className='text-teal-500 font-semibold'> Developer</span>{' '}
               and
@@ -61,7 +62,7 @@ const Home = () => {
               people to create digital products for both business and consumer
               use
             </p>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'>
+            <p className='text-lg py-2 leading-8 text-gray-800 dark:text-white'>
               I offer a wide range of services incuding programming and teaching
             </p>
           </AnimationOnScroll>
@@ -130,7 +131,7 @@ const Home = () => {
             animateOut='animate__fadeInLeftBig'
           >
             {' '}
-            <p className='text-md py-2 leading-8 text-gray-80 dark:text-white md:text-md max-w-2xl mx-auto'>
+            <p className='text-lg py-2 leading-8 text-gray-80 dark:text-white md:text-md max-w-2xl mx-auto'>
               Since the beginning of my journey as a
               <span className='text-teal-500 font-semibold'>Developer </span>{' '}
               and
@@ -142,12 +143,10 @@ const Home = () => {
               people to create digital products for both business and consumer
               use
             </p>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-white md:text-md max-w-2xl mx-auto'>
-              I offer a wide range of services incuding programming and teaching
-            </p>
           </AnimationOnScroll>
         </div>
         <Slider slides={ProjectData} />
+        <Testimonial />
         <Contact />
       </section>
     </div>
