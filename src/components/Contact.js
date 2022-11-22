@@ -1,13 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import emailjs from '@emailjs/browser';
+import { init } from '@emailjs/browser';
+import Message from './Message';
+init('user_jP7z7MucxHV5VTn5fPFCZ');
 
 const Contact = () => {
-  const ayo = require('../images/AYO.png');
+  const [formData, setformData] = useState({
+    subject: '',
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [alert, setAlert] = useState('');
+  const [variant, setVariant] = useState('');
+
+  const { email, message, name, subject } = formData;
+
+  const onChange = (e) =>
+    setformData({ ...formData, [e.target.name]: e.target.value });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.send('service_1vp1lkm', 'template_eevwce9', {
+      subject: subject,
+      name: name,
+      email: email,
+      message: message,
+    });
+
+    setTimeout(() => {
+      setVariant('success');
+      setAlert('Your message has successfully being sent.');
+    }, 3000);
+  };
+
   return (
-    <div className='min-h-screen p-6 flex items-center justify-center text-poppins'>
+    <div className='min-h-screen md:p-6 flex items-center justify-center text-poppins'>
       <div className='container max-w-screen-lg mx-auto'>
         <div>
-          <div className='bg-white rounded shadow-xl p-4 px-4 md:p-8 mb-6'>
+          <div className='bg-white rounded shadow-xl p-4 md:px-4 md:p-8 md:mb-6'>
             <div className='grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3'>
               <div className='text-gray-600'>
                 <p className='font-medium text-xl'>Contact Me</p>
@@ -16,10 +49,10 @@ const Contact = () => {
                   autoplay
                   loop
                   src='https://assets3.lottiefiles.com/packages/lf20_sxk2ofvv.json'
-                  style={{ height: '300px', width: '300px' }}
+                  style={{ height: '250px', width: '250px' }}
                 >
                   <Controls
-                    visible={true}
+                    visible={false}
                     buttons={['play', 'repeat', 'frame', 'debug']}
                   />
                 </Player>
@@ -30,10 +63,13 @@ const Contact = () => {
                     <label for='full_name'>Full Name</label>
                     <input
                       type='text'
-                      name='full_name'
+                      name='name'
+                      required
+                      onChange={(e) => onChange(e)}
                       id='full_name'
                       className='h-10 border mt-1 rounded px-4 w-full bg-gray-50'
-                      value=''
+                      value={name}
+                      placholder='John Smith'
                     />
                   </div>
 
@@ -42,9 +78,11 @@ const Contact = () => {
                     <input
                       type='text'
                       name='email'
+                      required
+                      onChange={(e) => onChange(e)}
                       id='email'
                       className='h-10 border mt-1 rounded px-4 w-full bg-gray-50'
-                      value=''
+                      value={email}
                       placeholder='email@domain.com'
                     />
                   </div>
@@ -55,17 +93,24 @@ const Contact = () => {
                       id=''
                       cols='10'
                       rows='5'
+                      required
+                      onChange={(e) => onChange(e)}
                       className=' border mt-1 rounded px-4 w-full bg-gray-50'
+                      value={message}
                     ></textarea>
                   </div>
 
                   <div className='md:col-span-5 text-right'>
                     <div className='inline-flex items-end'>
-                      <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
+                      <button
+                        className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                        onClick={sendEmail}
+                      >
                         Submit
                       </button>
                     </div>
                   </div>
+                  {alert && <Message variant={variant}>{alert}</Message>}
                 </div>
               </div>
             </div>

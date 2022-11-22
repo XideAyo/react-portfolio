@@ -7,10 +7,10 @@ const Testimonial = () => {
 
   return (
     <div>
-      <section className='m-20 text-gray-700 dark:text-white'>
+      <section className='md:m-20 text-gray-700 dark:text-white'>
         <div className='text-center md:max-w-xl lg:max-w-3xl mx-auto'>
-          <h3 className='text-3xl font-bold mb-'>Testimonials</h3>
-          <p className='m-6 pb-2 md:mb-12 md:pb-0'>
+          <h3 className='text-3xl font-bold'>Testimonials</h3>
+          <p className='md:m-6 pb-2 md:mb-12 md:pb-0'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
             error amet numquam iure provident voluptate esse quasi, veritatis
             totam voluptas nostrum quisquam eum porro a pariatur veniam.
