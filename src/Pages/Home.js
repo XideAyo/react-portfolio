@@ -31,11 +31,11 @@ const Home = () => {
           working on ambitious projects with positive people.
         </p>
       </div>
-      <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+      {/* <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
         <AiFillTwitterCircle />
         <AiFillInstagram />
         <AiFillGithub />
-      </div>
+      </div> */}
       <div className='flex justify-center relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 mt-20 overflow-hidden md:h-96 md:w-96'>
         <img src={ayo} alt='' className='object-cover object-center' />
       </div>

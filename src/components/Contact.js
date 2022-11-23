@@ -3,6 +3,8 @@ import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import emailjs from '@emailjs/browser';
 import { init } from '@emailjs/browser';
 import Message from './Message';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 init('user_jP7z7MucxHV5VTn5fPFCZ');
 
 const Contact = () => {
@@ -37,14 +39,22 @@ const Contact = () => {
   };
 
   return (
-    <div className='min-h-screen md:p-6 flex items-center justify-center text-poppins'>
+    <div className='min-h-screen md:p-6 flex items-center justify-center text-poppins shadow-2xl dark:shadow-none'>
       <div className='container max-w-screen-lg mx-auto'>
         <div>
-          <div className='bg-white rounded shadow-xl p-4 md:px-4 md:p-8 md:mb-6'>
+          <AnimationOnScroll animateIn='animate__bounceIn'>
+            <h1 className='text-center dark:text-white text-gray-900 text-3xl m-10 font-bold '>
+              Contact Me
+            </h1>
+          </AnimationOnScroll>
+
+          <div className='bg-white rounded  p-4 md:px-4 md:p-8 md:mb-6'>
             <div className='grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3'>
               <div className='text-gray-600'>
-                <p className='font-medium text-xl'>Contact Me</p>
-                <p>Contact me for all enquires.</p>
+                <p className='font-medium text-lg'>
+                  Feel free to reach out to me
+                </p>
+                <p>I'd respond with the speed of light.</p>
                 <Player
                   autoplay
                   loop

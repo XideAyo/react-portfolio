@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const Testimonial = () => {
   const wale = require('../images/51683355.jpg');
@@ -8,16 +9,13 @@ const Testimonial = () => {
   return (
     <div>
       <section className='md:m-20 text-gray-700 dark:text-white'>
-        <div className='text-center md:max-w-xl lg:max-w-3xl mx-auto'>
-          <h3 className='text-3xl font-bold'>Testimonials</h3>
-          <p className='md:m-6 pb-2 md:mb-12 md:pb-0'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-            error amet numquam iure provident voluptate esse quasi, veritatis
-            totam voluptas nostrum quisquam eum porro a pariatur veniam.
-          </p>
+        <div className='text-center md:max-w-xl lg:max-w-3xl mx-auto m-10'>
+          <AnimationOnScroll animateIn='animate__bounceIn'>
+            <h3 className='text-3xl font-bold'>Testimonials</h3>
+          </AnimationOnScroll>
         </div>
 
-        <div className='grid md:grid-cols-3 gap-6 text-center'>
+        <div className='grid md:grid-cols-3 gap-6 text-center mt-3'>
           <div>
             <div className='block rounded-lg shadow-lg bg-white'>
               <div
@@ -30,10 +28,10 @@ const Testimonial = () => {
               <div className='p-6 text-gray-800'>
                 <h4 className='text-2xl font-semibold mb-4'>Afolabi Olawale</h4>
                 <h4 className='text-md font-semibold mb-4'>
-                  FrontEnd Developer/Mobile App Developer, DuroNetworks
+                  FrontEnd Developer, DuroNetworks
                 </h4>
                 <hr />
-                <p className='mt-4'>
+                <p className='mt-4 text-sm'>
                   <svg
                     aria-hidden='true'
                     focusable='false'
@@ -49,8 +47,8 @@ const Testimonial = () => {
                       d='M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z'
                     ></path>
                   </svg>
-                  Lorem ipsum dolor sit amet eos adipisci, consectetur
-                  adipisicing elit.
+                  It's been a pleasure working with Ayo. I appreciate his
+                  dedication to the projects we have worked on together
                 </p>
               </div>
             </div>
@@ -70,7 +68,7 @@ const Testimonial = () => {
                   Product Lead, Elta Solutions
                 </h4>
                 <hr />
-                <p className='mt-4'>
+                <p className='mt-4 text-sm'>
                   <svg
                     aria-hidden='true'
                     focusable='false'
@@ -107,7 +105,7 @@ const Testimonial = () => {
                   Backend Engineer, MaonTech
                 </h4>
                 <hr />
-                <p className='mt-4'>
+                <p className='mt-4 text-sm'>
                   <svg
                     aria-hidden='true'
                     focusable='false'
