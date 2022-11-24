@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <main className='min-h-screen'>
+      <main className='h-screen'>
         <section className=' bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 text-poppins'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl logo dark:text-white text-teal-600'>
@@ -36,7 +36,6 @@ function App() {
           <Home />
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

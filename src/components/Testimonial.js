@@ -9,9 +9,11 @@ const Testimonial = () => {
   return (
     <div>
       <section className='md:m-20 text-gray-700 dark:text-white'>
-        <div className='text-center md:max-w-xl lg:max-w-3xl mx-auto m-10'>
+        <div className=' md:max-w-xl lg:max-w-3xl mx-auto md:m-10'>
           <AnimationOnScroll animateIn='animate__bounceIn'>
-            <h3 className='text-3xl font-bold'>Testimonials</h3>
+            <h3 className='text-4xl md:text-5xl py-1 font-bold md:text-center mt-10 mb-5 dark:text-white text-gray-900'>
+              Testimonials
+            </h3>
           </AnimationOnScroll>
         </div>
 

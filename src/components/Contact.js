@@ -39,11 +39,11 @@ const Contact = () => {
   };
 
   return (
-    <div className='min-h-screen md:p-6 flex items-center justify-center text-poppins shadow-2xl dark:shadow-none'>
-      <div className='container max-w-screen-lg mx-auto'>
+    <div className=' md:p-6 flex items-center justify-center text-poppins shadow-2xl dark:shadow-none mt-3'>
+      <div className='container max-w-screen-lg mx-auto mt-10'>
         <div>
           <AnimationOnScroll animateIn='animate__bounceIn'>
-            <h1 className='text-center dark:text-white text-gray-900 text-3xl m-10 font-bold '>
+            <h1 className='text-4xl md:text-5xl py-1 font-bold md:text-center mt-10 mb-5 dark:text-white text-gray-900 ml-2'>
               Contact Me
             </h1>
           </AnimationOnScroll>

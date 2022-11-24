@@ -12,6 +12,7 @@ import Slider from '../slider/Slider';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Contact from '../components/Contact';
 import Testimonial from '../components/Testimonial';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -148,6 +149,7 @@ const Home = () => {
         <Slider slides={ProjectData} />
         <Testimonial />
         <Contact />
+        <Footer />
       </section>
     </div>
   );
