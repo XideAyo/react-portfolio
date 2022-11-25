@@ -19,7 +19,7 @@ const Home = () => {
     <div>
       {' '}
       <div className='text-center p-8 py-10 text-poppins'>
-        <h2 className='text-4xl py-2 text-teal-600 font-bold md:text-6xl '>
+        <h2 className='text-3xl py-2 text-teal-600 font-bold md:text-6xl '>
           Akinwale Ayomide
         </h2>
         <h3 className='text-xl py-2 md:text-3xl dark:text-white'>
@@ -43,7 +43,7 @@ const Home = () => {
       <section>
         <div className='dark:text-white md:text-md max-w-2xl mx-auto text-poppins'>
           <AnimationOnScroll animateIn='animate__bounceIn'>
-            <h3 className=' text-4xl md:text-5xl py-1 font-bold md:text-center mt-10 '>
+            <h3 className=' text-3xl md:text-5xl py-1 font-bold md:text-center mt-10 '>
               Services I Offer
             </h3>
           </AnimationOnScroll>
@@ -51,7 +51,7 @@ const Home = () => {
             animateIn='animate__fadeInLeftBig'
             animateOut='animate__fadeInLeftBig'
           >
-            <p className='text-lg py-2 leading-8 text-gray-80'>
+            <p className='text-md md:text-lg py-2 leading-8 text-gray-80'>
               Since the beginning of my journey as a
               <span className='text-teal-500 font-semibold'> Developer</span>{' '}
               and
@@ -63,7 +63,7 @@ const Home = () => {
               people to create digital products for both business and consumer
               use
             </p>
-            <p className='text-lg py-2 leading-8 text-gray-800 dark:text-white'>
+            <p className='text-md md:text-lg py-2 leading-8 text-gray-800 dark:text-white'>
               I offer a wide range of services incuding programming and teaching
             </p>
           </AnimationOnScroll>
@@ -123,7 +123,7 @@ const Home = () => {
       <section>
         <div>
           <AnimationOnScroll animateIn='animate__bounceIn'>
-            <h3 className='text-3xl py-1 font-bold dark:text-white md:text-center mt-10 '>
+            <h3 className='text-3xl md:text-5xl py-1 font-bold dark:text-white md:text-center mt-10 '>
               Portfolio
             </h3>{' '}
           </AnimationOnScroll>
@@ -132,7 +132,7 @@ const Home = () => {
             animateOut='animate__fadeInLeftBig'
           >
             {' '}
-            <p className='text-lg py-2 leading-8 text-gray-80 dark:text-white md:text-md max-w-2xl mx-auto'>
+            <p className='text-md md:text-lg py-2 leading-8 text-gray-80 dark:text-white md:text-md max-w-2xl mx-auto'>
               Since the beginning of my journey as a
               <span className='text-teal-500 font-semibold'>Developer </span>{' '}
               and

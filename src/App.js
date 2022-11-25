@@ -11,16 +11,16 @@ function App() {
   return (
     <div className={darkMode ? 'dark' : ''}>
       <main className='h-screen'>
-        <section className=' bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 text-poppins'>
-          <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl logo dark:text-white text-teal-600'>
+        <section className=' bg-white px-4 md:px-20 lg:px-40 dark:bg-gray-900 text-poppins'>
+          <nav className='py-10 mb-12 flex justify-between px-5'>
+            <h1 className='md:text-xl text-lg logo dark:text-white text-teal-600'>
               Akinwale
             </h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className='cursor-pointer text-2xl dark:text-white'
+                  className='cursor-pointer md:text-2xl text-lg dark:text-white'
                 />
               </li>
               <li>

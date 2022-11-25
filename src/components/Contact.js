@@ -43,7 +43,7 @@ const Contact = () => {
       <div className='container max-w-screen-lg mx-auto mt-10'>
         <div>
           <AnimationOnScroll animateIn='animate__bounceIn'>
-            <h1 className='text-4xl md:text-5xl py-1 font-bold md:text-center mt-10 mb-5 dark:text-white text-gray-900 ml-2'>
+            <h1 className='text-3xl md:text-5xl py-1 font-bold md:text-center mt-10 mb-5 dark:text-white text-gray-900 ml-2'>
               Contact Me
             </h1>
           </AnimationOnScroll>
