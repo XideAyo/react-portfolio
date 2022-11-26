@@ -53,7 +53,10 @@ const Home = () => {
           >
             <p className='text-md md:text-lg py-2 leading-8 text-gray-80'>
               Since the beginning of my journey as a
-              <span className='text-teal-500 font-semibold'> Developer</span>{' '}
+              <span className='text-teal-500 font-semibold'>
+                {' '}
+                FullStack Developer
+              </span>{' '}
               and
               <span className='text-teal-500 font-semibold'>
                 {' '}
@@ -134,7 +137,9 @@ const Home = () => {
             {' '}
             <p className='text-md md:text-lg py-2 leading-8 text-gray-80 dark:text-white md:text-md max-w-2xl mx-auto'>
               Since the beginning of my journey as a
-              <span className='text-teal-500 font-semibold'>Developer </span>{' '}
+              <span className='text-teal-500 font-semibold'>
+                FullStack Developer{' '}
+              </span>{' '}
               and
               <span className='text-teal-500 font-semibold'>
                 {' '}
